@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android用户界面\ProgressBar\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+160519306.index
+2476128198.index
+3411638647.index
+4026063095.index
+4158277693.index
+749950425.index
+3447365672.index
+288254200.index

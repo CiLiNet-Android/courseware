@@ -1,0 +1,32 @@
+package com.cilinet.internalIO;
+
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+/** 从内部文件系统中读取数据 **/
+public class ReadActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_read);
+		
+		TextView txtV_info = (TextView)findViewById(R.id.txtV_info);
+		
+		
+		try {
+			InputStream inStream = this.openFileInput("info.txt");
+			byte[] datas = IOUtil.read(inStream);
+			String _info = new String(datas,"UTF-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

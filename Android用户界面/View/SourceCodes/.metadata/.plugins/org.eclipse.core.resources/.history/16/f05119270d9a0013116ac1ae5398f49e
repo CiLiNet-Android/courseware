@@ -1,0 +1,28 @@
+package com.cilinet.view;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.activity_main);
+		
+//		LinearLayout _linearLayout = new LinearLayout(this);
+//		_linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+//		_linearLayout.setPadding(DensityUtil.dip2px(this, 100f),0,0,0);
+		
+		FrameLayout.LayoutParams _layoutParams = new FrameLayout.LayoutParams(DensityUtil.dip2px(this, 100f), height);
+		_linearLayout.setLayoutParams();
+		
+	}
+
+}

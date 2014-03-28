@@ -1,0 +1,9 @@
+package com.cilinet.internalIO;
+
+/** IO工具类 **/
+public class IOUtil {
+	
+	/** 将数据写入输出流 **/
+	public static void write(String info,OutputStream outStream){}
+
+}

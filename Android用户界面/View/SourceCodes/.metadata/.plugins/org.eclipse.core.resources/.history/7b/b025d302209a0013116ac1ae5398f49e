@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="100dp">
+    
+    <View 
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0000FF"
+        android:visibility="gone"/>
+    
+    <View 
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0000FF"
+        android:visibility="visible"/>
+    
+    
+
+</LinearLayout>

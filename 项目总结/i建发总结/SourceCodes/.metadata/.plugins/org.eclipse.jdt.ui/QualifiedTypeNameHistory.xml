@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.R"/>
+<fullyQualifiedTypeName name="com.cilinet.R.layout"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="java.lang.Thread.UncaughtExceptionHandler"/>
+<fullyQualifiedTypeName name="com.cilinet.application.ExceptionHandler"/>
+<fullyQualifiedTypeName name="com.cilinet.application.DefaultExceptionHandler"/>
+<fullyQualifiedTypeName name="com.cilinet.settings.Settings"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="android.os.Environment"/>
+<fullyQualifiedTypeName name="android.os.Handler"/>
+<fullyQualifiedTypeName name="com.cilinet.application.BaseApplication"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+</qualifiedTypeNameHistroy>

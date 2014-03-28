@@ -1,0 +1,19 @@
+package com.cilinet.internalIO;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+
+/** IO工具类 **/
+public class IOUtil {
+	
+	/** 将数据写入输出流 **/
+	public static void write(String info,OutputStream outStream){
+		
+	}
+	
+	/** 从输入流中读取数据 **/
+	public static byte[] read(InputStream instream){
+		
+	} 
+
+}

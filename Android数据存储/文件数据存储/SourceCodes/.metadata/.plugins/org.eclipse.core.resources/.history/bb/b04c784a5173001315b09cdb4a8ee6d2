@@ -1,0 +1,14 @@
+package com.cilinet.internalIO;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+/** 将数据写入内部文件系统 **/
+public class WriteActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+
+}

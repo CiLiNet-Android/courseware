@@ -1,0 +1,25 @@
+package com.cilinet.view;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.view.View;
+
+public class NewView extends View {
+
+	public NewView(Context context) {
+		super(context);
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+		Paint _paint = new Paint();
+		
+		canvas.drawCircle(50f, 50f, 40f, _paint);
+		
+		super.onDraw(canvas);
+	}
+	
+	
+
+}

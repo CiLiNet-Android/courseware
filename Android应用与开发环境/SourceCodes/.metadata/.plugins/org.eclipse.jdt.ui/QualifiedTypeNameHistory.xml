@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.zhxl.R.id"/>
+<fullyQualifiedTypeName name="com.zhxl.activity.MainActivity"/>
+<fullyQualifiedTypeName name="com.zhxl.R.string"/>
+<fullyQualifiedTypeName name="com.zhxl.R"/>
+<fullyQualifiedTypeName name="com.zhxl.R.layout"/>
+<fullyQualifiedTypeName name="com.dailUp.R"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.dailUp.R.id"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="com.dailUp.activity.MainActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.sendsms.R"/>
+<fullyQualifiedTypeName name="com.cilinet.sendsms.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="com.cilinet.sendsms.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.telephony.SmsManager"/>
+<fullyQualifiedTypeName name="com.cilinet.sendsms.R.string"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.cilinet.sendsms.activity.MainActivity"/>
+</qualifiedTypeNameHistroy>

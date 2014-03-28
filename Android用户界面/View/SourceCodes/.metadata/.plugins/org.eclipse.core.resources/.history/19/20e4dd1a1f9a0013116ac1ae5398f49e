@@ -1,0 +1,7 @@
+package com.cilinet.view;
+
+import android.view.View;
+
+public class NewView extends View {
+
+}

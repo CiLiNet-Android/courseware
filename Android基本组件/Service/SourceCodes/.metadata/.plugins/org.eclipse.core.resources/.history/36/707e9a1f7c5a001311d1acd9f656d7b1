@@ -1,0 +1,16 @@
+package com.cilinet.service.boundService;
+
+import com.cilinet.service.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class OtherBoundServiceActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_otherboundservice);
+	}
+
+}

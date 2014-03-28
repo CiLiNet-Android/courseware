@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android异步通信\AsyncTask\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+2633085083.index
+4158277693.index
+149483861.index
+288254200.index

@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">TaskStackDemo</string>
+    
+    <string name="activity_1">Activity_1</string>
+    <string name="start_activity_2">打开Activity_2</string>
+    
+    <string name="activity_2">Activity_2</string>
+    <string name="start_activity_3">打开Activity_3</string>
+    
+    <string name="activity_3">Activity_3</string>
+    <string name="finish_activity_3">关闭Activity_3</string>
+    
+    <string name="start_dailActivity">打开拨号Activity</string>
+    
+    <string name="launchMode_singleTop_activity_1">LaunchMode:SingleTop Activity_1</string>
+	<string name="launchMode_singleTop_start_activity_2">打开Activity_2</string>
+	<string name="launchMode_singleTop_activity_2">LaunchMode:SingleTop Activity_2</string>
+	<string name="launchMode_singleTop_start_activity_1">打开Activity_1</string>
+	
+	<string name="launchMode_singleTask_activity_1">LaunchMode:SingleTask Activity_1</string>
+	<string name="launchMode_singleTask_start_activity_2">打开Activity_2</string>
+	<string name="launchMode_singleTask_activity_2">LaunchMode:SingleTop Activity_2</string>
+	<string name="launchMode_singleTask_start_activity_1">打开Activity_1</string>
+	
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义  自定义的View的XML配置中可以用的样式属性 ，定义了属性的名称和类型-->
+    <declare-styleable name="CircleRing">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="color" format="color" />
+        <attr name="arcColor" format="color" />
+        <attr name="startAngle" format="float" />
+        <attr name="sweepAngle" format="float" />
+        <attr name="isOnlyArc" format="boolean" />
+        <attr name="isProgressBar" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyButton">
+        <attr name="myColor" format="color" />
+    </declare-styleable>
+    
+</resources>

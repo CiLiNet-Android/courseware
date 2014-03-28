@@ -1,0 +1,32 @@
+package com.cilinet.activity;
+
+import android.os.Bundle;
+
+import com.cilinet.R;
+
+public class IndexActivity extends BaseActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_index);
+		
+		
+		//输出到SDCard
+		//如果SDCard存在，并且可以读写
+//		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
+//			try{
+//				File _file = new File(Environment.getExternalStorageDirectory(),"zhxl.txt");//获得SDCard的目录
+//				FileOutputStream _outStream = new FileOutputStream(_file);
+//			}catch(Exception e){
+//				e.printStackTrace();
+//			}
+//			
+//		}
+		
+		
+		
+		throw new RuntimeException();
+	}
+
+}

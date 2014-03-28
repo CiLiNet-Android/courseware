@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cr="http://schemas.android.com/apk/res/com.cilinet.view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#9cdbba"
+        android:orientation="horizontal" >
+
+        <com.cilinet.view.MyView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cr:arcColor="#54b09c"
+            cr:radius="100dip"
+            cr:strokeWidth="10dip"
+            cr:color="#d2fec7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#81c5b1" >
+        
+        <com.cilinet.view.MyView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cr:arcColor="#54b09c"
+            cr:isOnlyArc="true"
+            cr:strokeWidth="10dip"
+            cr:startAngle="-180"
+            cr:sweepAngle="90"
+            cr:color="#d2fec7" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#9cdbba" >
+        
+        <com.cilinet.view.MyView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cr:arcColor="#54b09c"
+            cr:isOnlyArc="true"
+            cr:strokeWidth="10dip"
+            cr:startAngle="45"
+            cr:sweepAngle="90"
+            cr:color="#d2fec7" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#81c5b1" >
+        
+        <com.cilinet.view.MyView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cr:arcColor="#54b09c"
+            cr:isOnlyArc="true"
+            cr:strokeWidth="10dip"
+            cr:startAngle="-90"
+            cr:sweepAngle="90"
+            cr:color="#d2fec7" />
+    </LinearLayout>
+
+</LinearLayout>

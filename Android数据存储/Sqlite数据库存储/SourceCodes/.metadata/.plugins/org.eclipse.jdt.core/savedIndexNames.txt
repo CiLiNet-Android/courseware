@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android数据存储\Sqlite数据库存储\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+383285431.index
+1818062496.index
+3096020987.index

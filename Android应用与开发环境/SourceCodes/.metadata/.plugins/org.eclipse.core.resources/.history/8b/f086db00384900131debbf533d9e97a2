@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Dail Up</string>
+    
+    <string name="please_input_mobileNo">请输入电话号码</string>
+
+</resources>

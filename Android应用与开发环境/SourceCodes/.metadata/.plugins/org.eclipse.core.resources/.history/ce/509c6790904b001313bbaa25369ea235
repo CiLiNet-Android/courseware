@@ -1,0 +1,33 @@
+package com.cilinet.sendsms.activity;
+
+import com.cilinet.sendsms.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+
+public class MainActivity extends Activity {
+	
+	private EditText edTxt_phoneNo;
+	private EditText edTxt_smsContent;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_main);
+		
+		init();//初始化
+	}
+	
+	private void init(){
+		
+		initView();
+	}
+	
+	/** 界面组件对象初始化 **/
+	private void initView(){
+		edTxt_phoneNo = (EditText)super.findViewById(R.id.edTxt_phoneNo);
+		edTxt_smsContent = (EditText)super.findViewById(R.id.edTxt_smsContent);
+	}
+
+}

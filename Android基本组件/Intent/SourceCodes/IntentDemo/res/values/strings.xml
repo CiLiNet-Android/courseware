@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">Intent Demo</string>
+
+    <string name="activity_1">Activity 1</string>
+    
+    <string name="start_activity_2_by_explicit">显式方式启动Activity_2</string>
+    <string name="start_activity_2_by_implicit">隐式方式启动Activity_2</string>
+    
+    <string name="activity_2">Activity 2</string>
+    
+    <string name="finish_activity_2">关闭Activity_2</string>
+    
+    <string name="activity_3">Activity_3</string>
+    
+    <string name="finish_activity_3">关闭Activity_3</string>
+    
+    <string name="start_contactActivity">打开联系人</string>
+    
+</resources>

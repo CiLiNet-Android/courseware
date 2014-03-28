@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/launchMode_singleInstance_activity_1"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:gravity="center"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/launchMode_singleInstance_start_activity_2"
+        android:id="@+id/btn_launchMode_singleTask_startActivity_2"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/launchMode_singleTask_start_activity_1"
+        android:id="@+id/btn_launchMode_singleTask_startActivity_1_1"/>
+
+</LinearLayout>

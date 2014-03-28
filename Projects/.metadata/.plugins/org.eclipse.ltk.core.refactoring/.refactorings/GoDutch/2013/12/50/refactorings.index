@@ -1,0 +1,14 @@
+1386576677445	Rename resource 'user_add_or_edit.xml'
+1386576710324	Rename resource 'person_add_or_edit.xml'
+1386579133186	Rename local variable 'edTxt_userName'
+1386579161879	Rename field 'edTxt_userName'
+1386581251053	Rename method 'checkPersonIfNotExists'
+1386581303262	Rename method 'checkPersonNameIfNotExists'
+1386582044615	Rename method 'insertUser'
+1386582055078	Rename method 'deleteUser'
+1386743991441	Rename type 'MyBaseAdapter'
+1386755828130	Delete element
+1386755833300	Delete element
+1386755926563	Rename resource 'accountbook_item.xml'
+1386755940048	Rename resource 'person_item.xml'
+1386811756103	Rename local variable '_view'

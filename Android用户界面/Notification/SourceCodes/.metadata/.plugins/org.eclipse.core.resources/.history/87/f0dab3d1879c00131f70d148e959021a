@@ -1,0 +1,70 @@
+package com.cilinet.notification;
+
+import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+	
+	private static final String TAG = "MainActivity";
+	
+	private Button btn_sendNotification;
+	
+	private NotificationManager mNotificationManager;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_main);
+	
+		//第一步，获取NotificationManager，用于发送通知
+		mNotificationManager = (NotificationManager)super.getSystemService(NOTIFICATION_SERVICE);
+		
+		btn_sendNotification = (Button)findViewById(R.id.btn_sendNotification);
+		btn_sendNotification.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				//第二步，创建Notification
+				/**
+				 * int icon 通知消息的图标
+				 * CharSequence tickerText 通知消息的信息
+				 * */
+				Notification _notification = new Notification(R.drawable.notification_icon, "腾讯发送一个新的消息", System.currentTimeMillis());
+				
+				//第三步，设置在通知列表中的显示内容(RemoteView)及启动组件（Service,Activity,BroadcastReceiver）
+				Intent _intent = new Intent(MainActivity.this,NotificationActivity.class);
+				PendingIntent _pendingIntent = PendingIntent.getActivity(MainActivity.this, 1101, _intent, 0);
+				
+				_notification.setLatestEventInfo(MainActivity.this, "新信息的标题", "新信息的内容...", _pendingIntent);
+				
+				
+				//第四步，发送Notification
+				/**
+				 * id 通知的标识
+				 * 
+				 * **/
+				mNotificationManager.notify(2323, _notification);
+				
+			}
+		});
+	}
+
+	@Override
+	protected void onStop() {
+		//通知列表并不会停止该Activity
+		Log.i(TAG, "onStop()...");
+		
+		//mNotificationManager.cancel(2323);
+		
+		super.onStop();
+	}
+	
+	
+
+}

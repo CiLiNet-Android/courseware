@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android基本组件\Intent\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+1818062496.index
+2122885674.index
+1998713820.index

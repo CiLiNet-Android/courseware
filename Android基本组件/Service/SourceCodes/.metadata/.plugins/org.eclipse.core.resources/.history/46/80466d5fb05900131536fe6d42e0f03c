@@ -1,0 +1,27 @@
+package com.cilinet.service.startedService;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.cilinet.service.R;
+
+public class StartedServiceActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_startedservice);
+		
+		Button btn_start_startedService = (Button)super.findViewById(R.id.btn_start_startedService);
+		btn_start_startedService.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				
+			}
+		});
+	}
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_2_activity_1"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        android:id="@+id/txtView_scene_2_message"/>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_activity_2"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_scene_2_finish_activity_2"/>
+
+</LinearLayout>

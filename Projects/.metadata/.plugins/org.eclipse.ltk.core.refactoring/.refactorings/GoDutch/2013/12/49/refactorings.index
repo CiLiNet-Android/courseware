@@ -1,0 +1,23 @@
+1385880357600	Rename package 'cilinet.godutch.util'
+1385882357615	Rename package 'cilinet.godutch.database.sqliteDal'
+1385883503448	Rename package 'cilinet.godutch.database.sqliteDAL'
+1385883632448	Rename type 'UserDal'
+1385883656283	Rename type 'UserDAL'
+1385883782113	Move compilation unit
+1385883829169	Move compilation unit
+1385883834418	Delete element
+1385884155860	Rename type 'SQLiteDateBaseConfig'
+1385966028550	Rename compilation unit 'Person.java'
+1385971005323	Rename local variable 'whereCondition'
+1385971020736	Rename local variable 'whereCondition'
+1385971375107	Rename local variable '_i'
+1385971386900	Rename local variable '_i'
+1385974400526	Rename package 'cilinet.godutch.business'
+1385974414831	Rename package 'cilinet.godutch.service'
+1386060241942	Rename field 'mBoundDatas'
+1386125724661	Rename type 'BassApplication'
+1386144663677	Rename type 'UserActivity'
+1386144738771	Rename type 'UserAdapter'
+1386144749856	Rename type 'UserAdapterItem'
+1386151706522	Rename resource 'activity_user.xml'
+1386155663731	Rename type 'PersonAdapterItem'

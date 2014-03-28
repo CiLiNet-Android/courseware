@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.Activity_2"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.R.id"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.activity.Activity_3"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.activity.Activity_1"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.activity.Activity_2"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.R"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.R.id"/>
+<fullyQualifiedTypeName name="com.cilinet.lifeCycle.activity.Activity_3"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="com.cilinet.createActivity.R"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.scene_1.Activity_2"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.scene_1.Activity_3"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.opengl.Visibility"/>
+<fullyQualifiedTypeName name="android.app.ActivityManager"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.scene_3.Activity_2"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.scene_3.Activity_1"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.R"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="com.cilinet.switchActivity.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.launchMode.R"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.launchMode.singleTop.Activity_1"/>
+<fullyQualifiedTypeName name="com.cilinet.taskStack.launchMode.R.id"/>
+</qualifiedTypeNameHistroy>

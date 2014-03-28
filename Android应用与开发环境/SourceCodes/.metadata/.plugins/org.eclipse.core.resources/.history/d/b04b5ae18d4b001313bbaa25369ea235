@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Send SMS</string>
+    
+    <string name="please_input_phoneNo">请输入手机号：</string>
+    
+    <string name="input_phoneNo">输入电话号码</string>
+    
+    <string name="please_input_smsContent"></string>
+
+</resources>

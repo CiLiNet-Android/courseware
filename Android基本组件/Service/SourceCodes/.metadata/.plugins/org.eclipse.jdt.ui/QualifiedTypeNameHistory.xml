@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cilinet.service.createService.CreatedService"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.cilinet.service.MainActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.service.createService.BindService.MyBinder"/>
+<fullyQualifiedTypeName name="com.cilinet.service.bindService.BindService.MyBinder"/>
+<fullyQualifiedTypeName name="com.cilinet.service.bindService.BindService"/>
+<fullyQualifiedTypeName name="com.cilinet.service.bindService.BindServiceActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.service.startedService.StartedServiceActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.service.startedService.StartedService"/>
+<fullyQualifiedTypeName name="com.cilinet.service.startedService.OtherStartedServiceActivity"/>
+<fullyQualifiedTypeName name="android.os.IBinder"/>
+<fullyQualifiedTypeName name="android.os.Binder"/>
+<fullyQualifiedTypeName name="android.content.ServiceConnection"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.cilinet.service.boundService.BoundServiceActivity.MyServiceConnection"/>
+<fullyQualifiedTypeName name="com.cilinet.service.R"/>
+<fullyQualifiedTypeName name="com.cilinet.service.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.service.boundService.BoundService"/>
+<fullyQualifiedTypeName name="android.app.Service"/>
+<fullyQualifiedTypeName name="com.cilinet.service.boundService.OtherBoundServiceActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.service.boundService.BoundService.MyBinder"/>
+<fullyQualifiedTypeName name="com.cilinet.service.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+</qualifiedTypeNameHistroy>

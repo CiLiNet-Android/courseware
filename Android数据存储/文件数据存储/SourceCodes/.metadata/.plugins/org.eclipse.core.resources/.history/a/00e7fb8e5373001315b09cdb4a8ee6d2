@@ -1,0 +1,8 @@
+package com.cilinet.internalIO;
+
+import android.app.Activity;
+
+/** 从内部文件系统中读取数据 **/
+public class ReadActivity extends Activity {
+
+}

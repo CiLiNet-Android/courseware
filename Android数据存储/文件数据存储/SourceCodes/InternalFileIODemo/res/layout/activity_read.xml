@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Read Activity"
+        android:textSize="40sp"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="从文件中获取的信息："/>
+    
+   <TextView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:minLines="11"
+       android:id="@+id/txtV_info"/>
+   
+   <Button 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="返 回"
+       android:id="@+id/btn_back"/>
+
+</LinearLayout>

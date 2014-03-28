@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.database.sqlite(SQLiteOpenHelper.class[SQLiteOpenHelper" modifiers="1057" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.app(Application.class[Application" modifiers="33" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.widget(BaseAdapter.class[BaseAdapter" modifiers="1057" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.widget(ExpandableListAdapter.class[ExpandableListAdapter" modifiers="1537" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.test(AndroidTestCase.class[AndroidTestCase" modifiers="33" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/src&lt;cilinet.godutch.adapter.base{BaseAdapter.java[BaseAdapter" modifiers="1025" timestamp="1386744249435"/>
+<typeInfo handle="=GoDutch/src&lt;cilinet.godutch.database.base{BaseDAL.java[BaseDAL" modifiers="1025" timestamp="1387329826156"/>
+<typeInfo handle="=GoDutch/D:\/ProgramFiles\/adt-bundle-windows\/sdk\/platforms\/android-17\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1360711984000"/>
+<typeInfo handle="=GoDutch/src&lt;cilinet.godutch.activity.base{BaseActivity.java[BaseActivity" modifiers="1" timestamp="1389366360428"/>
+<typeInfo handle="=GoDutch/src&lt;cilinet.godutch.activity.base{FrameActivity.java[FrameActivity" modifiers="1" timestamp="1389374125963"/>
+<typeInfo handle="=GoDutch/src&lt;cilinet.godutch.business.base{BaseBusiness.java[BaseBusiness" modifiers="1" timestamp="1389368446560"/>
+</typeInfoHistroy>

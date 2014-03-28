@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Service Demo</string>
+    
+    <string name="startedServiceActivity">StartedService Activity</string>
+    <string name="start_startedService">启动 StartedService</string>
+    <string name="finish_startedService">关闭 StartedService</string>
+    
+    <string name="otherStartedServiceActivity">OtherStartedService Activity</string>
+    <string name="otherStart_startedService">启动 StartedService</string>
+    <string name="otherFinish_startedService">关闭 StartedService</string>
+    <string name="finish_otherStartedServiceActivity">关闭 OtherStartedServiceActivity</string>
+    
+    <string name="start_otherStartedServiceActivity">启动 OtherStartedServiceActivity</string>
+
+</resources>

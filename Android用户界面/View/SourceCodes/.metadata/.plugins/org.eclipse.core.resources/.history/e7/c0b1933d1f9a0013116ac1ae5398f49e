@@ -1,0 +1,14 @@
+package com.cilinet.view;
+
+import android.content.Context;
+import android.view.View;
+
+public class NewView extends View {
+
+	public NewView(Context context) {
+		super(context);
+	}
+	
+	
+
+}

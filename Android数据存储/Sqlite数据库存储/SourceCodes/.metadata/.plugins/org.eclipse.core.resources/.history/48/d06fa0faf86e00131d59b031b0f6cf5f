@@ -1,0 +1,36 @@
+package com.cilinet.dbStorage.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/** Demo: 使用SQLiteOpenHelper **/
+public class MySQLiteOpenHelper extends SQLiteOpenHelper {
+
+	/**
+	 * @param name 要创建的数据库名称
+	 * @param factory 游标工厂  null使用默认的游标工厂
+	 * @param int version 数据库版本号 从1开始计数
+	 * **/
+	public MySQLiteOpenHelper(Context context, String name, int version) {
+		super(context, name, null, version);
+	}
+
+	/** 当数据库创建后，调用该方法：用于创建数据库表结构 **/
+	@Override
+	public void onCreate(SQLiteDatabase sqLiteDatabase) {
+		sqLiteDatabase.execSQL("CREATE TABLE person (personId INTEGER PRIMARY KEY AUTOINCREMENT, personName VARCHAR(20),personAge INTEGER)");
+	}
+
+	/** 当使用新或旧的版本号打开数据库时，系统会根据版本号的差异，选择对应的数据库表结构更新语句 **/
+	@Override
+	public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+//		if(oldVersion == 1 && newVersion == 2){//如果当前版本是1，但是需要的版本是2。则要升级到版本2
+//			
+//		}
+		sqLiteDatabase.execSQL("DROP TABLE IF EXISTS person");//删除表
+		onCreate(sqLiteDatabase);//创建
+		
+	}
+
+}

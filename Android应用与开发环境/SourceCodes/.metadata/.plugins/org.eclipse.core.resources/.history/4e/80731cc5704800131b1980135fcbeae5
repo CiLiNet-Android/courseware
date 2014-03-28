@@ -1,0 +1,8 @@
+package com.zhxl.activity;
+
+import android.app.Activity;
+
+/** 第一个Activity **/
+public class MainActivity extends Activity {
+
+}

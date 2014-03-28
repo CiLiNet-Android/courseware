@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cilinet.switchActivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- scene 1 start -->
+        <activity android:name="com.cilinet.switchActivity.scene_1.Activity_1">
+            <!-- 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+             -->
+        </activity>
+        
+        <activity android:name="com.cilinet.switchActivity.scene_1.Activity_2"></activity>
+        <activity android:name="com.cilinet.switchActivity.scene_1.Activity_3"></activity> 
+        <!-- scene 1 end -->
+        
+        <!-- scene 2 start -->
+        <activity android:name="com.cilinet.switchActivity.scene_2.Activity_1">
+        </activity>
+        
+        <activity android:name="com.cilinet.switchActivity.scene_2.Activity_2"></activity>
+        <!-- scene 2 end -->
+        
+         <!-- scene 3 start -->
+        <activity android:name="com.cilinet.switchActivity.scene_3.Activity_1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.cilinet.switchActivity.scene_3.Activity_2"></activity>
+        <!-- scene 3 end -->
+        
+        
+    </application>
+
+</manifest>

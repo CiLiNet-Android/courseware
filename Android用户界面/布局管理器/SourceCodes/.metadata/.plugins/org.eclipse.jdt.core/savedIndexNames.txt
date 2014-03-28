@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android用户界面\布局管理器\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+2464340333.index
+416632718.index
+4158277693.index
+288254200.index

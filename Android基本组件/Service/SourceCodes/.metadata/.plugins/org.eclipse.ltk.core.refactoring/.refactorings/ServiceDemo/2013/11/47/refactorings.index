@@ -1,0 +1,14 @@
+1384672984621	Rename type 'FirstService'
+1384675200563	Rename type 'CreatedService'
+1384675341256	Rename type 'CreateService'
+1384676293555	Rename type 'MainActivity'
+1384676305395	Move compilation unit
+1384676334605	Rename resource 'activity_main.xml'
+1384676351560	Rename resource 'activity_createService.xml'
+1384676373080	Rename resource 'activity_createservice.xml'
+1384676437583	Rename package 'com.cilinet.service.createService'
+1384676448652	Move compilation unit
+1384676461018	Rename type 'CreateServiceActivity'
+1384676481779	Rename resource 'activity_create_service.xml'
+1384677482089	Rename local variable 'btn_start_createdService'
+1384677574151	Rename local variable 'btn_stop_createdService'

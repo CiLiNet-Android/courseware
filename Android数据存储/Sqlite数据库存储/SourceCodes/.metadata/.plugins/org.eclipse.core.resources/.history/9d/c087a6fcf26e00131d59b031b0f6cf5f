@@ -1,0 +1,155 @@
+package com.cilinet.dbStorage.db;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.cilinet.dbStorage.bean.Person;
+
+/** 数据库操作类 **/
+public class DBOperation {
+	private static final String TAG = "DBOperation";
+	
+	private Context mContext;
+	private SQLiteDatabase mSqLiteDatabase;
+	
+	private static final String DATABASE_NAME = "myFirstSqliteDatabase";
+	
+	public DBOperation(Context context){
+		mContext = context;
+	}
+	
+	/**
+	 * 建立及打开数据库
+	 * **/
+	public void openOrCreateDatabase(){
+		mSqLiteDatabase = mContext.openOrCreateDatabase(DATABASE_NAME, mContext.MODE_PRIVATE, null);
+	}
+	
+	/**
+	 * 建立数据库表
+	 * **/
+	public void createUsersTable(){
+		String _sql = "CREATE TABLE IF NOT EXISTS users(userId INTEGER PRIMARY KEY AUTOINCREMENT,userName VARCHAR(50) NOT NULL,userAddress VARCHAR(50))";
+		mSqLiteDatabase.execSQL(_sql);
+	}
+	
+	public void insertUserBySQL(User user){
+//		String _sql = "INSERT INTO users(userName,userAddress) VALUES('" + user.userName + "','" + user.userAddress + "')";
+//		mSqLiteDatabase.execSQL(_sql);
+		
+		String _sql = "INSERT INTO users(userName,userAddress) VALUES(?,?)";
+		mSqLiteDatabase.execSQL(_sql,new Object[]{user.userName,user.userAddress});
+	}
+	
+	/**
+	 * 向表中插入数据
+	 * **/
+	public long insertUserByAPI(User user){
+		if(mSqLiteDatabase != null){
+			ContentValues _contentValues = new ContentValues();
+			_contentValues.put("userName", user.userName);//在此检验一下中文会不会乱码
+			_contentValues.put("userAddress", user.userAddress);
+
+			return mSqLiteDatabase.insert("users", null, _contentValues);
+		}
+		
+		return -1;
+		
+	}
+	
+	/** 查询数据 **/
+	public List<User> queryUserBySQL(){
+		List<User> _users = new ArrayList<User>();
+		
+		String _sql = "SELECT * FROM users";
+		
+		Cursor _cursor = mSqLiteDatabase.rawQuery(_sql, null);
+		while(_cursor.moveToNext()){
+			User _user = new User();
+			_user.id = _cursor.getInt(_cursor.getColumnIndex("userId"));
+			_user.userName = _cursor.getString(_cursor.getColumnIndex("userName"));
+			_user.userAddress = _cursor.getString(_cursor.getColumnIndex("userAddress"));
+			
+			_users.add(_user);
+		}
+		
+		return _users;
+		
+	}
+	
+	public List<User> queryUserByAPI(){
+		List<User> _users = new ArrayList<User>();
+		
+		Cursor _cursor = mSqLiteDatabase.query("users", null, "userId>=?", new String[]{String.valueOf(2)}, null, null, "userId ASC","0,1");
+		while(_cursor.moveToNext()){
+			User _user = new User();
+			_user.id = _cursor.getInt(_cursor.getColumnIndex("userId"));
+			_user.userName = _cursor.getString(_cursor.getColumnIndex("userName"));
+			_user.userAddress = _cursor.getString(_cursor.getColumnIndex("userAddress"));
+			
+			_users.add(_user);
+		}
+		
+		return _users;
+	}
+	
+	/** 修改数据 **/
+	public void updateUserBySQL(){
+		String _sql = "UPDATE users SET userAddress=? WHERE userId=?";
+		mSqLiteDatabase.execSQL(_sql, new Object[]{"福建漳州",2});
+	}
+	
+	public boolean updateUserByAPI(){
+		ContentValues _contentValues = new ContentValues();
+		_contentValues.put("userAddress", "福建厦门");
+		
+		int rowId = mSqLiteDatabase.update("users", _contentValues, "userId=?", new String[]{String.valueOf(2)});
+		
+		return rowId > 0;
+	}
+	
+	
+	public Cursor queryAllUser(){
+		if(mSqLiteDatabase != null){
+			return mSqLiteDatabase.query("users", new String[]{"userName","userAddress"}, null, null, null, null, null);
+		}
+		
+		return null;
+	}
+	
+	public Cursor queryUser(String selection,String[] selectionArgs, String groupBy, String having, String orderBy){
+		if(mSqLiteDatabase != null){
+			return mSqLiteDatabase.query(DATABASE_NAME, new String[]{"userName","userAddress"}, selection, selectionArgs, groupBy, having, orderBy);
+		}
+		return null;
+	}
+	
+	/** 批量添加人员 **/
+	public boolean insertUsers(List<Person> persons){
+		mSqLiteDatabase.beginTransaction();
+		try{
+			person = 
+			ContentValues conV = new ContentValues();
+			conV.put("personId",person. )
+			
+			//一次只能添加一条数据，即一个person
+			mSqLiteDatabase.insert("users", null, values)
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			mSqLiteDatabase.endTransaction();
+		}
+	}
+	
+	public void closeDatabase(){
+		if(mSqLiteDatabase != null){
+			mSqLiteDatabase.close();
+			mSqLiteDatabase = null;
+		}
+	}
+}

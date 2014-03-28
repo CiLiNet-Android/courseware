@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;btn_createTable&apos; in &apos;com.cilinet.dbStorage.activity.MainActivity.onCreate(...)&apos; to &apos;btn_insertUser&apos;&#x0D;&#x0A;- Original project: &apos;SqliteDBStorageDemo&apos;&#x0D;&#x0A;- Original element: &apos;com.cilinet.dbStorage.activity.MainActivity.onCreate(Bundle).btn_createTable&apos;&#x0D;&#x0A;- Renamed element: &apos;btn_createTable&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;btn_createTable&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.cilinet.dbStorage.activity{MainActivity.java[MainActivity~onCreate~QBundle;@btn_createTable!1085!1152!1092!1106!QButton;!0!false" name="btn_insertUser" references="true" stamp="1387541584852" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+E:\培训资料\Android\Android异步通信\Handler消息传递机制\SourceCodes\.metadata\.plugins\org.eclipse.jdt.core
+4158277693.index
+288254200.index
+402601088.index
+268637732.index

@@ -1,0 +1,7 @@
+1387363142608	Rename local variable '_categoryId'
+1387414346271	Rename field 'PERSON_MANAGER'
+1387414353093	Rename field 'ACCOUNT_BOOK_MANAGER'
+1387414359691	Rename field 'CATEGORY_MANAGER'
+1387416550319	Rename resource 'list_category_item.xml'
+1387421527519	Rename method 'remove'
+1387510024006	Rename local variable '_childCategory'

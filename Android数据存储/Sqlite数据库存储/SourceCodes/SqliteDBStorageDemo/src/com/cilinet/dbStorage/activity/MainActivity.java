@@ -1,0 +1,89 @@
+package com.cilinet.dbStorage.activity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
+import com.cilinet.dbStorage.R;
+import com.cilinet.dbStorage.bean.Person;
+import com.cilinet.dbStorage.db.DBOperation;
+import com.cilinet.dbStorage.db.User;
+
+public class MainActivity extends Activity {
+	
+	private static final String TAG = "MainActivity";
+
+	private DBOperation dbOperation;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_main);
+		
+		dbOperation = new DBOperation(MainActivity.this);
+		
+		Button btn_createDatabase = (Button)super.findViewById(R.id.btn_createDatabase);
+		btn_createDatabase.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dbOperation.openOrCreateDatabase();
+				//dbOperation.createUsersTable();
+			}
+		});
+		
+		Button btn_createTable = (Button)findViewById(R.id.btn_createTable);
+		btn_createTable.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				dbOperation.createUsersTable();
+				dbOperation.closeDatabase();
+			}
+		});
+		
+		Button btn_insertUser = (Button)findViewById(R.id.btn_insertUser);
+		btn_insertUser.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				User _user = new User();
+				_user.userName = "王五";
+				_user.userAddress = "福建福州ByAndroidAPI";
+				dbOperation.insertUserBySQL(_user);
+				dbOperation.closeDatabase();
+			}
+		});
+		
+		Button btn_selectUser = (Button)findViewById(R.id.btn_selectUser);
+		btn_selectUser.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				List<User> _users = dbOperation.queryUserBySQL();
+				for(User _user : _users){
+					Log.i(TAG, _user.toString());
+				}
+				dbOperation.closeDatabase();
+			}
+		});
+		
+		Button btn_updateUser = (Button)findViewById(R.id.btn_updateUser);
+		btn_updateUser.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				
+				List<Person> _persons = new ArrayList<Person>();
+				_persons.add(new Person());
+				_persons.add(new Person());
+				_persons.add(new Person());
+				dbOperation.insertUsers(_persons);
+				
+				dbOperation.updateUserByAPI();
+				dbOperation.closeDatabase();
+			}
+		});
+	}
+
+}

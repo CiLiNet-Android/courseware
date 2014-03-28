@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cr="http://schemas.android.com/apk/res/com.cilinet.view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.cilinet.view.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        cr:arcColor="#54b09c"
+        cr:radius="100dip"
+        cr:strokeWidth="10dip"
+        cr:color="#d2fec7" />
+
+</LinearLayout>

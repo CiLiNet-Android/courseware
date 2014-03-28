@@ -1,0 +1,37 @@
+package com.cilinet.asyncTask;
+
+import android.os.AsyncTask;
+
+public class MyAsyncTask extends AsyncTask<Void, Integer, Void> {
+	
+	/** 宿主线程中执行,在异步任务开始前调用 **/
+	@Override
+	protected void onPreExecute() {
+		super.onPreExecute();
+	}
+	
+	/** 新创建一个线程执行，异步任务执行的主方法 **/
+	@Override
+	protected Void doInBackground(Void... arg0) {
+
+		return null;
+	}
+	
+	/** 宿主线程中执行，当在异步任务中调用 publishProgress()后，调用该方法**/
+	@Override
+	protected void onProgressUpdate(Integer... values) {
+		super.onProgressUpdate(values);
+	}
+	
+	/** 在宿主线程中执行，异步任务执行结束后调用 **/
+	@Override
+	protected void onPostExecute(Void result) {
+		super.onPostExecute(result);
+	}
+	@Override
+	protected void onCancelled() {
+		super.onCancelled();
+	}
+	
+
+}

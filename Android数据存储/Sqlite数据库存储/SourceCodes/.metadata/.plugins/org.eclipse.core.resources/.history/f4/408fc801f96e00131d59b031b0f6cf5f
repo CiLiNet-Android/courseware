@@ -1,0 +1,11 @@
+package com.cilinet.dbStorage.db;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/** Demo: 使用SQLiteOpenHelper **/
+public class MySQLiteOpenHelper extends SQLiteOpenHelper {
+
+	
+}

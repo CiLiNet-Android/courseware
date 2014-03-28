@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.cilinet.application.ExceptionHandler&apos; to &apos;DefaultExceptionHandler&apos;&#x0D;&#x0A;- Original project: &apos;TechnologyExperiment&apos;&#x0D;&#x0A;- Original element: &apos;com.cilinet.application.ExceptionHandler&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cilinet.application.DefaultExceptionHandler&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ExceptionHandler&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.cilinet.application{ExceptionHandler.java[ExceptionHandler" matchStrategy="1" name="DefaultExceptionHandler" qualified="false" references="true" similarDeclarations="false" stamp="1386252173651" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cilinet.createActivity.Activity&apos; to &apos;com.cilinet.createActivity.activity&apos;&#x0D;&#x0A;- Original project: &apos;CreateActivityDemo&apos;&#x0D;&#x0A;- Original element: &apos;CreateActivityDemo/src/com.cilinet.createActivity.Activity&apos;&#x0D;&#x0A;- Renamed element: &apos;CreateActivityDemo/src/com.cilinet.createActivity.activity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cilinet.createActivity.Activity&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.cilinet.createActivity.Activity" name="com.cilinet.createActivity.activity" qualified="false" references="true" stamp="1384429770209" textual="false" version="1.0"/>
+</session>

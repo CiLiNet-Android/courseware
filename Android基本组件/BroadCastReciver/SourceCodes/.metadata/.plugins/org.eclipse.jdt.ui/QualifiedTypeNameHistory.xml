@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cilinet.normalBroadcastReceiver.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.normalBroadcastReceiver.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.cilinet.orderedBroadcastReceiver.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.orderedBroadcastReceiver.R.id"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="android.view.Window"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.BitmapDrawable"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.R.drawable"/>
+<fullyQualifiedTypeName name="android.graphics.BitmapFactory"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.DynamicUpdateUIBroadcastReceiver"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.R.id"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
+<fullyQualifiedTypeName name="android.content.IntentFilter"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.DynamicUpdateUIService.DynamicUpdateUIBroadcastReceiver"/>
+<fullyQualifiedTypeName name="android.support.v4.content.LocalBroadcastManager"/>
+<fullyQualifiedTypeName name="com.cilinet.dynamicUpdateUI.DynamicUpdateUIService"/>
+</qualifiedTypeNameHistroy>

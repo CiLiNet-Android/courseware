@@ -1,0 +1,16 @@
+package com.cilinet.normalBroadcastReceiver;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+
+public class NormalBroadcastReceiverA extends BroadcastReceiver {
+	
+	private static final String TAG = "NormalBroadcastReceiverA";
+
+	@Override
+	public void onReceive(Context arg0, Intent arg1) {
+
+	}
+
+}

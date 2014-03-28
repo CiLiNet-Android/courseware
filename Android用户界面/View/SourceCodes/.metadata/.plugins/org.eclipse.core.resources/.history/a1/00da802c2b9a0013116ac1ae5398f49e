@@ -1,0 +1,134 @@
+package com.cilinet.view;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+
+/** 自定义View **/
+public class MyView extends View {
+	
+	private static final String TAG = "MyView";
+	
+	private final Paint mPaint;
+	private float mRadius;
+	private float mStrokeWidth;
+	private int mColor;
+	private int mArcColor;
+	private float mStartAngle;
+	private float mSweepAngle;
+	private boolean isOnlyArc;
+
+	public MyView(Context context) {
+		this(context,null);
+	}
+
+//	public MyView(Context context, AttributeSet attrs, int defStyleAttr) {
+//		super(context, attrs, defStyleAttr);
+//	}
+	
+	public MyView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		initAttrs(context, attrs);
+		mPaint = new Paint();
+		mPaint.setAntiAlias(true);// 消除锯齿
+		mPaint.setStyle(Paint.Style.STROKE);// 绘制空心圆
+		mPaint.setStrokeWidth(mStrokeWidth);
+		
+	}
+	
+	/** 从配置文件中执行初始化 **/
+	private void initAttrs(Context context, AttributeSet attrs) {
+		TypedArray typeArr = context.getTheme().obtainStyledAttributes(attrs,
+				R.styleable.CircleRing, 0, 0);
+		try {
+			// 获取园的半径，默认为-1,为-1是表示没有设置
+			mRadius = typeArr.getDimension(R.styleable.CircleRing_radius, -1);
+			// 获取圆环半径，默认为4
+			mStrokeWidth = typeArr.getDimension(
+					R.styleable.CircleRing_strokeWidth, 4);
+			// 获取颜色 ，默认为白色
+			mColor = typeArr.getColor(R.styleable.CircleRing_color, 0xFFFFFFFF);
+			// 获取圆弧颜色，默认为白色
+			mArcColor = typeArr.getColor(R.styleable.CircleRing_arcColor,
+					0xFFFFFFFF);
+
+			mStartAngle = typeArr
+					.getFloat(R.styleable.CircleRing_startAngle, 0);
+			mSweepAngle = typeArr
+					.getFloat(R.styleable.CircleRing_sweepAngle, 0);
+
+			isOnlyArc = typeArr.getBoolean(R.styleable.CircleRing_isOnlyArc,
+					false);
+
+		} finally {
+			typeArr.recycle();
+		}
+	}
+	
+	/** 绘图主方法
+	 * @param Canvas canvas 画布
+	 *  **/
+	@Override
+	protected void onDraw(Canvas canvas) {
+		int cx = getWidth() / 2;
+		int cy = getHeight() / 2;
+		// 当没有设置半径的时候，令其为min(width, height)的一半
+		if (mRadius == -1) {
+			if (getWidth() > getHeight()) {
+				mRadius = getHeight() / 2 - mStrokeWidth;
+			} else {
+				mRadius = getWidth() / 2 - mStrokeWidth;
+			}
+		}
+
+		if (!isOnlyArc) {
+			// 开始绘制
+			mPaint.setColor(mColor);
+			canvas.drawCircle(cx, cy, mRadius, mPaint);
+		}
+
+		if (mStartAngle != 0 || mSweepAngle != 0) {
+			RectF oval = new RectF();
+			oval.left = (cx - mRadius);
+			oval.top = (cy - mRadius);
+			oval.right = mRadius * 2 + (cx - mRadius);
+			oval.bottom = mRadius * 2 + (cy - mRadius);
+			mPaint.setColor(mArcColor);
+			canvas.drawArc(oval, mStartAngle, mSweepAngle, false, mPaint);
+		}
+		super.onDraw(canvas);
+	}
+
+	@Override
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		Log.i(TAG, "widthMeasureSpec: " + widthMeasureSpec + " && " + "heightMeasureSpec: " + heightMeasureSpec);
+		
+		Log.i(TAG, "widthMeasureSpec >> 2: " + (widthMeasureSpec >> 2));
+		
+		Log.i(TAG,"MeasureSpec.getSize(widthMeasureSpec): " + MeasureSpec.getSize(widthMeasureSpec));
+		
+		Log.i(TAG,"MeasureSpec.getSize(heightMeasureSpec): " + MeasureSpec.getSize(heightMeasureSpec));
+		
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		Log.i(TAG, "onTouchEvent()...");
+		
+		return super.onTouchEvent(event);
+	}
+	
+	public interface OnMyViewDidListener {
+		public void did();
+	}
+	
+	
+
+}

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Service Demo</string>
+    
+    <string name="startedServiceActivity">StartedService Activity</string>
+
+</resources>

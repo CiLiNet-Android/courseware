@@ -1,0 +1,20 @@
+package com.cilinet.application;
+
+import android.app.Application;
+import android.content.Context;
+
+public class BaseApplication extends Application {
+	
+	public static Context sAppContext;
+
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		
+		sAppContext = super.getApplicationContext();
+		
+		Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(super.getBaseContext()));
+	}
+
+	
+}

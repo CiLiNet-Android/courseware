@@ -1,0 +1,23 @@
+package com.cilinet.internalIO;
+
+import java.io.InputStream;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+/** 从内部文件系统中读取数据 **/
+public class ReadActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_read);
+		
+		TextView txtV_info = (TextView)findViewById(R.id.txtV_info);
+		
+		InputStream inStream = this.openFileInput("info.txt");
+		String _info = IOUtil.read(inStream);
+	}
+
+}

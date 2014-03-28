@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.R"/>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.activity.MainActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.activity.GetSharedPreferenceActivity"/>
+<fullyQualifiedTypeName name="android.widget.CheckBox"/>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.activity.SetSharedPreferenceActivity"/>
+<fullyQualifiedTypeName name="com.cilinet.sharedpreference.R.id"/>
+<fullyQualifiedTypeName name="android.preference.PreferenceManager"/>
+<fullyQualifiedTypeName name="android.view.Window"/>
+<fullyQualifiedTypeName name="com.cilinet.settings.R.layout"/>
+<fullyQualifiedTypeName name="com.cilinet.settings.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.cilinet.settings.R.xml"/>
+<fullyQualifiedTypeName name="com.cilinet.settings.SettingsPreferenceActivity"/>
+<fullyQualifiedTypeName name="android.preference.ListPreference"/>
+<fullyQualifiedTypeName name="android.preference.Preference.OnPreferenceChangeListener"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,31 @@
+package com.cilinet.textView;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	private Button btn_weiXinChat;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);//全屏显示
+		
+		super.setContentView(R.layout.activity_main);
+		
+		//仿微信
+		btn_weiXinChat = (Button)findViewById(R.id.btn_weiXinChat);
+		btn_weiXinChat.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				
+			}
+		});
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference 
+        android:title="第一个配置项" 
+        android:summary="配置一个CheckBoxPreference" 
+        android:key="chkBoxPref" />
+    
+    <ListPreference
+        android:title="第二个配置项"
+        android:summary="配置一个ListPreference"
+        android:entries="@array/entryArray"
+        android:entryValues="@array/entryValueArray"
+        android:key="lstPref"/>
+
+</PreferenceScreen>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 聊天信息的时间 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <!-- 聊天信息的时间 -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chat_text_date_style"
+            android:id="@+id/txtV_sendChatMsgTime"/>
+        
+    </LinearLayout>
+    
+    <!-- 聊天信息的内容 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+        
+        <!-- 头像 -->
+        <ImageView 
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/imgV_sendChatterPhoto"/>
+        
+        <!-- 聊天信息 -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chat_content_data_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/imgV_sendChatterPhoto"
+            android:background="@drawable/send_chatmsg_backgroud"
+            android:id="@+id/txtV_sendChatMsg"/>
+        
+        <!-- 昵称 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/chat_text_name_style"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imgV_sendChatterPhoto"
+            android:layout_toRightOf="@id/txtV_sendChatMsg" 
+            android:id="@+id/txtV_sendChatterName"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

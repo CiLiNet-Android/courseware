@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Switch Activity Demo</string>
+    
+    <string name="scene_1_activity_1">Scene 1 的  Activity_1</string>
+    <string name="start_activity_2">启动Activity_2</string>
+    
+    <string name="scene_1_activity_2">Scene 1 的 Activity_2</string>
+    <string name="start_activity_3">启动Activity_3</string>
+    
+    <string name="scene_1_activity_3">Scene 1 的 Activity_3</string>
+    <string name="finish_activity_3">关闭Activity_3</string>
+    
+    <string name="scene_2_activity_1">Scene 2 的 Activity_1</string>
+    <string name="finish_activity_2">关闭Activity_2</string>
+    
+    <string name="scene_3_activity_1">Scene 3 的 Activity_1</string>
+    
+    <string name="scene_3_activity_2">Scene 3 的 Activity_2</string>
+    
+    <string name="scene_3_add_contact">添加联系人信息</string>
+    
+    <string name="please_input_contactName">请输入联系人姓名：</string>
+    <string name="please_input_contactNumber">请输入联系人号码：</string>
+    
+    <string name="scene_3_config_finish">编辑完成</string>
+    
+    <string name="scene_3_contactInfo">联系人信息：</string>
+    
+
+</resources>
