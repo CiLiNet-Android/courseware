@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;dataLength&apos; in &apos;com.cilinet.imageDownloader.activity.MainActivity.onCreate(...).new OnClickListener() {...}.onClick(...)&apos; to &apos;length&apos;&#x0D;&#x0A;- Original project: &apos;ImageDownloader&apos;&#x0D;&#x0A;- Original element: &apos;com.cilinet.imageDownloader.activity.MainActivity.onCreate(...).new OnClickListener() {...}.onClick(View).dataLength&apos;&#x0D;&#x0A;- Renamed element: &apos;dataLength&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;dataLength&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.cilinet.imageDownloader.activity{MainActivity.java[MainActivity~onCreate~QBundle;[~onClick~QView;@dataLength!1874!1892!1878!1887!I!0!false" name="length" references="true" stamp="1396085445754" version="1.0"/>
+</session>
