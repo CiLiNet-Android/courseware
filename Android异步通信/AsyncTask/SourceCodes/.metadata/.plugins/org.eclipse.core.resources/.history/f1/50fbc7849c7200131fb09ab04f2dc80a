@@ -1,7 +1,0 @@
-package com.cilinet.asyncTask;
-
-import android.os.AsyncTask;
-
-public class MyAsyncTask extends AsyncTask<Void, Integer, Void> {
-
-}
