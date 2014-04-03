@@ -1,0 +1,75 @@
+package com.cilinet.imageDownloader.activity;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Handler;
+import android.os.Message;
+
+/** 图片下载线程 **/
+public class ImageDownloadRunnable implements Runnable {
+	
+	private Handler mHandler;
+	
+	public ImageDownloadRunnable(Handler handler){
+		mHandler = handler;
+	}
+
+	/**
+	 * 从网络上加载图片数据，
+	 * 不时向主线程汇报执行进度。
+	 * 图片数据加载完成成后，发送消息给UI线程，通知其更新UI组件
+	 */
+	@Override
+	public void run() {
+		try{
+			// 第一步，从网络加载图片数据
+			URL url = new URL("http://b.hiphotos.baidu.com/image/w%3D2048/sign=fe395f9fdb33c895a67e9f7be52b73f0/377adab44aed2e737ac9ae248501a18b87d6fa92.jpg");
+			HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+			// 获取图片的字节尺寸
+			//int datasLength = httpURLConnection.getContentLength();
+			// Log.i(TAG,String.valueOf(datasLength));
+			// progressDialog.setMax(datasLength);
+			InputStream inStream = httpURLConnection.getInputStream();
+			
+			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+			byte[] buffer = new byte[1024];
+			int length = 0;
+
+			int number = 0;
+//			if (datasLength % buffer.length == 0) {
+//				number = datasLength / buffer.length;
+//			} else {
+//				number = datasLength / buffer.length + 1;
+//			}
+			
+//			progressDialog.setMax(number);
+//			progressDialog.setMessage("正在玩命下载，请稍后...");
+
+			while ((length = inStream.read(buffer)) != -1) {
+				byteArrayOutputStream.write(buffer, 0, length);
+				//progressDialog.incrementProgressBy(1);
+			}
+			
+			inStream.close();
+			
+			// 图片数据
+			byte[] datas = byteArrayOutputStream.toByteArray();
+			
+			// 创建位图
+			Bitmap bitmap = BitmapFactory.decodeByteArray(
+					datas, 0, datas.length);
+			
+			Message message = new Message();
+			message.what = 0;
+			message.obj = bitmap;
+			MainActivity.this.handler.sendMessage(message);
+			
+		}catch(Exception e){}
+	}
+
+}

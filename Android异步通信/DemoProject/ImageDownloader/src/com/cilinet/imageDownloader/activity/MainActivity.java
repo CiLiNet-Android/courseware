@@ -1,5 +1,7 @@
 package com.cilinet.imageDownloader.activity;
 
+import java.lang.ref.WeakReference;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
@@ -27,18 +29,20 @@ public class MainActivity extends Activity {
 	public static final int MESSAGE_TYPE_SET_PROGRESS_MAX = 1;
 	public static final int MESSAGE_TYPE_INCREASE_PROGRESS = 2;
 	
-	public final Handler mHandler = new Handler(){
-		
+	private Handler mHandler = new Handler(){
 		//当Looper轮询到一个Message实例，就调用handler的handleMessage方法，并把轮到的Message实例发送过来
 		@Override
-		public void handleMessage(Message msg) {
+		public void handleMessage(final Message msg) {
 			switch(msg.what){
-			case MESSAGE_TYPE_UPDATE_IMAGEVIEW: {
-				Bitmap bitmap = (Bitmap)msg.obj;
-				imgView_image.setImageBitmap(bitmap);
-				progressDialog.dismiss();
+			case MESSAGE_TYPE_UPDATE_IMAGEVIEW: 
+				this.post(new Runnable(){
+					public void run(){
+						Bitmap bitmap = (Bitmap)msg.obj;
+						imgView_image.setImageBitmap(bitmap);
+						progressDialog.dismiss();
+					}
+				});
 				break;
-			}
 			case MESSAGE_TYPE_SET_PROGRESS_MAX: {
 				int max = msg.arg1;
 				progressDialog.setMax(max);
@@ -52,9 +56,9 @@ public class MainActivity extends Activity {
 				break;
 			}
 		}
-		
+			
 	};
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.requestWindowFeature(Window.FEATURE_NO_TITLE);

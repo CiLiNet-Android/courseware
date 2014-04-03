@@ -1,0 +1,10 @@
+package com.cilinet.imageDownloader.activity;
+
+public class ImageDownloadRunnable implements Runnable {
+
+	@Override
+	public void run() {
+
+	}
+
+}

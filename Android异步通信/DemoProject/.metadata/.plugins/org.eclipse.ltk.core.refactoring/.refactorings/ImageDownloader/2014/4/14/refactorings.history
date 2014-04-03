@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;message&apos; in &apos;com.cilinet.imageDownloader.activity.ImageDownloadRunnable.run()&apos; to &apos;updateImageViewMsg&apos;&#x0D;&#x0A;- Original project: &apos;ImageDownloader&apos;&#x0D;&#x0A;- Original element: &apos;com.cilinet.imageDownloader.activity.ImageDownloadRunnable.run().message&apos;&#x0D;&#x0A;- Renamed element: &apos;message&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;message&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.cilinet.imageDownloader.activity{ImageDownloadRunnable.java[ImageDownloadRunnable~run@message!1909!1940!1917!1923!QMessage;!0!false" name="updateImageViewMsg" references="true" stamp="1396360482060" version="1.0"/>
+</session>
