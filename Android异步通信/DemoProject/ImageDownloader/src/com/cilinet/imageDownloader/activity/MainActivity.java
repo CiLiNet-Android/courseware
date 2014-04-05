@@ -25,39 +25,50 @@ public class MainActivity extends Activity {
 	
 	private ProgressDialog progressDialog;
 	
+	private ImageDownloadThread mImageDownloadThread;
+	
 	public static final int MESSAGE_TYPE_UPDATE_IMAGEVIEW = 0;
 	public static final int MESSAGE_TYPE_SET_PROGRESS_MAX = 1;
 	public static final int MESSAGE_TYPE_INCREASE_PROGRESS = 2;
 	
-	private Handler mHandler = new Handler(){
+	private static class MainHandler extends Handler{
+		
+		private WeakReference<MainActivity> mWeakReference;
+		
+		public MainHandler(MainActivity mainActivity){
+			mWeakReference = new WeakReference<MainActivity>(mainActivity);
+		}
+
 		//当Looper轮询到一个Message实例，就调用handler的handleMessage方法，并把轮到的Message实例发送过来
 		@Override
-		public void handleMessage(final Message msg) {
-			switch(msg.what){
-			case MESSAGE_TYPE_UPDATE_IMAGEVIEW: 
-				this.post(new Runnable(){
-					public void run(){
-						Bitmap bitmap = (Bitmap)msg.obj;
-						imgView_image.setImageBitmap(bitmap);
-						progressDialog.dismiss();
-					}
-				});
-				break;
-			case MESSAGE_TYPE_SET_PROGRESS_MAX: {
-				int max = msg.arg1;
-				progressDialog.setMax(max);
-				progressDialog.setMessage("玩命下载中...");
-				break;
-			}
-			case MESSAGE_TYPE_INCREASE_PROGRESS: {
-				progressDialog.incrementProgressBy(1);
-			}
-			default: 
-				break;
+		public void handleMessage(Message msg) {
+			MainActivity mainActivity = mWeakReference.get();
+			
+			if(null != mainActivity){
+				switch(msg.what){
+				case MESSAGE_TYPE_UPDATE_IMAGEVIEW: 
+					Bitmap bitmap = (Bitmap)msg.obj;
+					mainActivity.imgView_image.setImageBitmap(bitmap);
+					mainActivity.progressDialog.dismiss();
+					break;
+				case MESSAGE_TYPE_SET_PROGRESS_MAX: {
+					int max = msg.arg1;
+					mainActivity.progressDialog.setMax(max);
+					mainActivity.progressDialog.setMessage("玩命下载中...");
+					break;
+				}
+				case MESSAGE_TYPE_INCREASE_PROGRESS: {
+					mainActivity.progressDialog.incrementProgressBy(1);
+				}
+				default: 
+					break;
+				}
 			}
 		}
-			
-	};
+		
+	}
+	
+	private MainHandler mHandler = new MainHandler(this);
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,8 +91,8 @@ public class MainActivity extends Activity {
 				progressDialog.show();
 				
 				//启动子线程
-				new Thread(new ImageDownloadRunnable(mHandler)).start();
-	
+				mImageDownloadThread = new ImageDownloadThread(mHandler);
+				mImageDownloadThread.start();
 			}
 		});
 	}
